@@ -206,6 +206,5 @@ Running the connector populates the `output/` folder:
 - [.env.example](file:///c:/Users/GAYATRI/OneDrive/Desktop/Geak%20minds/.env.example): Safe environment variable template.
 - [coverage_report.md](file:///c:/Users/GAYATRI/OneDrive/Desktop/Geak%20minds/coverage_report.md): Complete 17-category coverage audit.
 - [execution_evidence.md](file:///c:/Users/GAYATRI/OneDrive/Desktop/Geak%20minds/execution_evidence.md): Redacted live execution logs.
-- [WALKTHROUGH.md](file:///c:/Users/GAYATRI/OneDrive/Desktop/Geak%20minds/WALKTHROUGH.md): 20-minute technical interview preparation notes.
 - [AI_DISCLOSURE.md](file:///c:/Users/GAYATRI/OneDrive/Desktop/Geak%20minds/AI_DISCLOSURE.md): Note describing AI tools used.
 
