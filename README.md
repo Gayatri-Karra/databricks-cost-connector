@@ -103,7 +103,6 @@ A production-grade Python connector that connects to Databricks accounts and wor
 ├── .env.example                      # Safe environment variable template
 ├── coverage_report.md                # Root copy of coverage report
 ├── execution_evidence.md             # Redacted live execution evidence
-├── WALKTHROUGH.md                    # 20-minute technical walkthrough notes
 ├── AI_DISCLOSURE.md                  # AI tools usage disclosure note
 ├── pytest.ini                        # Pytest configuration
 └── .gitignore                        # Git ignore file
