@@ -1,0 +1,36 @@
+[
+  {
+    "platform": "Databricks AWS",
+    "billing_account_identifier": null,
+    "workspace_identifier": null,
+    "source_category": "User and service-principal attribution",
+    "source_record_identifier": "77408127158024",
+    "resource_or_workload_identifier": null,
+    "resource_or_workload_name": null,
+    "resource_or_workload_type": null,
+    "service_or_product": "Identity & Access Management",
+    "sku": null,
+    "usage_start": null,
+    "usage_end": null,
+    "billing_period_start": null,
+    "billing_period_end": null,
+    "consumed_quantity": null,
+    "consumed_unit": null,
+    "pricing_quantity": null,
+    "pricing_unit": null,
+    "list_unit_price": null,
+    "list_cost": null,
+    "contracted_cost": null,
+    "effective_cost": null,
+    "billed_cost": null,
+    "currency": null,
+    "user_or_service_principal_attribution": "ce24btech11031@iith.ac.in",
+    "tags_or_allocation_metadata": null,
+    "source_update_time": null,
+    "collection_time": "2026-10-07T14:29:53Z",
+    "additional_source_metadata": {
+      "display_name": null,
+      "active": true
+    }
+  }
+]

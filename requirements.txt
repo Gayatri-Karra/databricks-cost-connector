@@ -1,0 +1,26 @@
+# Core Databricks & API SDKs
+databricks-sdk==0.147.0
+requests==2.34.2
+urllib3==2.8.0
+python-dotenv==1.2.4
+python-dateutil==2.9.0.post0
+six==1.17.0
+
+# Security & Serialization
+cryptography==50.0.2
+google-auth==2.60.0
+cffi==2.1.1
+pycparser==3.0
+pyasn1==0.6.4
+pyasn1_modules==0.4.2
+protobuf==6.33.6
+certifi==2026.7.22
+charset-normalizer==3.5.2
+idna==3.20
+
+# Testing
+pytest==9.1.1
+iniconfig==2.3.0
+pluggy==1.6.0
+packaging==26.3
+

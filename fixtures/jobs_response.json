@@ -1,0 +1,39 @@
+{
+  "jobs": [
+    {
+      "job_id": 8930129,
+      "creator_user_name": "etl-service-principal@example.com",
+      "created_time": 1727740800000,
+      "settings": {
+        "name": "Nightly-ETL-Pipeline",
+        "format": "MULTI_TASK",
+        "max_concurrent_runs": 1,
+        "schedule": {
+          "quartz_cron_expression": "0 0 2 * * ?",
+          "timezone_id": "UTC"
+        },
+        "tags": {
+          "Department": "DataPlatform",
+          "Workload": "ETL",
+          "Schedule": "Nightly"
+        },
+        "tasks": [
+          {
+            "task_key": "extract_raw_telemetry",
+            "notebook_task": {
+              "notebook_path": "/Shared/ETL/extract"
+            }
+          },
+          {
+            "task_key": "transform_silver_gold",
+            "depends_on": [{"task_key": "extract_raw_telemetry"}],
+            "notebook_task": {
+              "notebook_path": "/Shared/ETL/transform"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+

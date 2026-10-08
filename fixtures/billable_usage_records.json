@@ -1,0 +1,204 @@
+[
+  {
+    "record_id": "usg-908234-rec-001",
+    "account_id": "c8a1b2c3-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+    "workspace_id": "4920194810294810",
+    "cluster_id": "0924-110243-abc12345",
+    "cluster_name": "dev-data-engineering-cluster",
+    "sku_name": "ENTERPRISE_ALL_PURPOSE_COMPUTE",
+    "product_name": "All-Purpose Compute",
+    "cloud": "AWS",
+    "region": "us-east-1",
+    "usage_start_time": "2026-10-01T08:00:00Z",
+    "usage_end_time": "2026-10-01T09:00:00Z",
+    "billing_period_start": "2026-10-01T00:00:00Z",
+    "billing_period_end": "2026-10-31T23:59:59Z",
+    "usage_quantity": "1.7500000000",
+    "usage_unit": "DBU",
+    "pricing_quantity": "1.7500000000",
+    "pricing_unit": "DBU",
+    "list_unit_price": "0.5500",
+    "list_cost": "0.9625000000",
+    "contracted_cost": "0.9625000000",
+    "effective_cost": "0.9625000000",
+    "billed_cost": "0.9625000000",
+    "currency": "USD",
+    "identity_metadata": {
+      "run_as": "developer.alice@example.com",
+      "user_name": "developer.alice@example.com"
+    },
+    "custom_tags": {
+      "Department": "DataPlatform",
+      "Environment": "Dev",
+      "CostCenter": "CC-10492"
+    },
+    "updated_at": "2026-10-01T09:15:00Z",
+    "record_type": "USAGE"
+  },
+  {
+    "record_id": "usg-908234-rec-002",
+    "account_id": "c8a1b2c3-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+    "workspace_id": "4920194810294810",
+    "warehouse_id": "38f7d92840bc1234",
+    "warehouse_name": "Serverless BI Analytics",
+    "sku_name": "ENTERPRISE_SERVERLESS_SQL",
+    "product_name": "Serverless SQL Warehouse",
+    "cloud": "AWS",
+    "region": "us-east-1",
+    "usage_start_time": "2026-10-02T10:00:00Z",
+    "usage_end_time": "2026-10-02T11:00:00Z",
+    "billing_period_start": "2026-10-01T00:00:00Z",
+    "billing_period_end": "2026-10-31T23:59:59Z",
+    "usage_quantity": "4.2000000000",
+    "usage_unit": "DBU",
+    "pricing_quantity": "4.2000000000",
+    "pricing_unit": "DBU",
+    "list_unit_price": "0.7000",
+    "list_cost": "2.9400000000",
+    "contracted_cost": "2.9400000000",
+    "effective_cost": "2.9400000000",
+    "billed_cost": "2.9400000000",
+    "currency": "USD",
+    "identity_metadata": {
+      "run_as": "analyst.bob@example.com"
+    },
+    "custom_tags": {
+      "Department": "Analytics",
+      "Environment": "Production",
+      "CostCenter": "CC-20811"
+    },
+    "updated_at": "2026-10-02T11:15:00Z",
+    "record_type": "USAGE"
+  },
+  {
+    "record_id": "usg-908234-rec-003",
+    "account_id": "c8a1b2c3-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+    "workspace_id": "4920194810294810",
+    "job_id": "8930129",
+    "job_name": "Nightly-ETL-Pipeline",
+    "sku_name": "ENTERPRISE_JOBS_COMPUTE",
+    "product_name": "Jobs Compute",
+    "cloud": "AWS",
+    "region": "us-east-1",
+    "usage_start_time": "2026-10-03T02:00:00Z",
+    "usage_end_time": "2026-10-03T02:45:00Z",
+    "billing_period_start": "2026-10-01T00:00:00Z",
+    "billing_period_end": "2026-10-31T23:59:59Z",
+    "usage_quantity": "0.8500000000",
+    "usage_unit": "DBU",
+    "pricing_quantity": "0.8500000000",
+    "pricing_unit": "DBU",
+    "list_unit_price": "0.2000",
+    "list_cost": "0.1700000000",
+    "contracted_cost": "0.1700000000",
+    "effective_cost": "0.1700000000",
+    "billed_cost": "0.1700000000",
+    "currency": "USD",
+    "identity_metadata": {
+      "run_as": "etl-service-principal@example.com"
+    },
+    "custom_tags": {
+      "Department": "DataPlatform",
+      "Workload": "ETL",
+      "Schedule": "Nightly"
+    },
+    "updated_at": "2026-10-03T03:00:00Z",
+    "record_type": "USAGE"
+  },
+  {
+    "record_id": "usg-908234-rec-004",
+    "account_id": "c8a1b2c3-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+    "workspace_id": "4920194810294810",
+    "cluster_id": "0924-110243-abc12345",
+    "sku_name": "DATA_TRANSFER_OUT_INTER_REGION",
+    "product_name": "Network Egress",
+    "cloud": "AWS",
+    "region": "us-east-1",
+    "usage_start_time": "2026-10-03T05:00:00Z",
+    "usage_end_time": "2026-10-03T06:00:00Z",
+    "billing_period_start": "2026-10-01T00:00:00Z",
+    "billing_period_end": "2026-10-31T23:59:59Z",
+    "usage_quantity": "25.5000000000",
+    "usage_unit": "GIGABYTES",
+    "pricing_quantity": "25.5000000000",
+    "pricing_unit": "GIGABYTES",
+    "list_unit_price": "0.0200",
+    "list_cost": "0.5100000000",
+    "contracted_cost": "0.5100000000",
+    "effective_cost": "0.5100000000",
+    "billed_cost": "0.5100000000",
+    "currency": "USD",
+    "identity_metadata": {
+      "run_as": "developer.alice@example.com"
+    },
+    "custom_tags": {
+      "Department": "DataPlatform"
+    },
+    "updated_at": "2026-10-03T06:30:00Z",
+    "record_type": "USAGE"
+  },
+  {
+    "record_id": "usg-908234-rec-005",
+    "account_id": "c8a1b2c3-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+    "workspace_id": "4920194810294810",
+    "sku_name": "STORAGE_SYSTEM_METASTORE",
+    "product_name": "Unity Catalog Storage",
+    "cloud": "AWS",
+    "region": "us-east-1",
+    "usage_start_time": "2026-10-04T00:00:00Z",
+    "usage_end_time": "2026-10-04T23:59:59Z",
+    "billing_period_start": "2026-10-01T00:00:00Z",
+    "billing_period_end": "2026-10-31T23:59:59Z",
+    "usage_quantity": "100.0000000000",
+    "usage_unit": "GIGABYTE_HOURS",
+    "pricing_quantity": "100.0000000000",
+    "pricing_unit": "GIGABYTE_HOURS",
+    "list_unit_price": "0.0001",
+    "list_cost": "0.0100000000",
+    "contracted_cost": "0.0100000000",
+    "effective_cost": "0.0100000000",
+    "billed_cost": "0.0100000000",
+    "currency": "USD",
+    "identity_metadata": {
+      "run_as": "system"
+    },
+    "custom_tags": {
+      "Service": "Storage"
+    },
+    "updated_at": "2026-10-05T01:00:00Z",
+    "record_type": "USAGE"
+  },
+  {
+    "record_id": "usg-908234-rec-006",
+    "account_id": "c8a1b2c3-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+    "workspace_id": "4920194810294810",
+    "cluster_id": "0924-110243-abc12345",
+    "sku_name": "ENTERPRISE_ALL_PURPOSE_COMPUTE",
+    "product_name": "All-Purpose Compute",
+    "cloud": "AWS",
+    "region": "us-east-1",
+    "usage_start_time": "2026-10-01T08:00:00Z",
+    "usage_end_time": "2026-10-01T09:00:00Z",
+    "billing_period_start": "2026-10-01T00:00:00Z",
+    "billing_period_end": "2026-10-31T23:59:59Z",
+    "usage_quantity": "-0.2500000000",
+    "usage_unit": "DBU",
+    "pricing_quantity": "-0.2500000000",
+    "pricing_unit": "DBU",
+    "list_unit_price": "0.5500",
+    "list_cost": "-0.1375000000",
+    "contracted_cost": "-0.1375000000",
+    "effective_cost": "-0.1375000000",
+    "billed_cost": "-0.1375000000",
+    "currency": "USD",
+    "identity_metadata": {
+      "run_as": "developer.alice@example.com"
+    },
+    "custom_tags": {
+      "Department": "DataPlatform"
+    },
+    "updated_at": "2026-10-04T12:00:00Z",
+    "record_type": "RETRACTION"
+  }
+]
+

@@ -1,0 +1,41 @@
+[
+  {
+    "platform": "Databricks AWS",
+    "billing_account_identifier": null,
+    "workspace_identifier": null,
+    "source_category": "SQL warehouse consumption",
+    "source_record_identifier": "c545f7bf0cb2b3fd",
+    "resource_or_workload_identifier": "c545f7bf0cb2b3fd",
+    "resource_or_workload_name": "Serverless Starter Warehouse",
+    "resource_or_workload_type": "sql_warehouse",
+    "service_or_product": "Serverless SQL Warehouse",
+    "sku": "ENTERPRISE_SERVERLESS_SQL",
+    "usage_start": null,
+    "usage_end": null,
+    "billing_period_start": null,
+    "billing_period_end": null,
+    "consumed_quantity": null,
+    "consumed_unit": "DBU",
+    "pricing_quantity": null,
+    "pricing_unit": null,
+    "list_unit_price": null,
+    "list_cost": null,
+    "contracted_cost": null,
+    "effective_cost": null,
+    "billed_cost": null,
+    "currency": null,
+    "user_or_service_principal_attribution": "ce24btech11031@iith.ac.in",
+    "tags_or_allocation_metadata": {},
+    "source_update_time": null,
+    "collection_time": "2026-10-07T14:29:52Z",
+    "additional_source_metadata": {
+      "warehouse_size": "SMALL",
+      "min_num_clusters": 1,
+      "max_num_clusters": 1,
+      "auto_stop_mins": 10,
+      "enable_serverless_compute": true,
+      "channel": "CHANNEL_NAME_CURRENT",
+      "state": "STOPPED"
+    }
+  }
+]

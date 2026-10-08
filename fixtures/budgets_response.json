@@ -1,0 +1,24 @@
+{
+  "budget_policies": [
+    {
+      "budget_id": "bgt-prod-infra-001",
+      "budget_name": "Monthly Production Workload Cap",
+      "account_id": "c8a1b2c3-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+      "workspace_id": "4920194810294810",
+      "target_amount": "5000.00",
+      "period": "MONTHLY",
+      "start_date": "2026-10-01T00:00:00Z",
+      "end_date": "2026-10-31T23:59:59Z",
+      "created_by": "finops-lead@example.com",
+      "update_time": "2026-10-01T00:00:00Z",
+      "custom_tags": {
+        "Environment": "Production"
+      },
+      "alerts": [
+        {"threshold_percent": 80, "action": "EMAIL_NOTIFICATION"},
+        {"threshold_percent": 100, "action": "ALERT_WEBHOOK"}
+      ]
+    }
+  ]
+}
+

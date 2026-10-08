@@ -1,0 +1,28 @@
+# Environments
+.venv/
+venv/
+ENV/
+env/
+.env
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Sensitive environment credentials
+.env
+*.local.env
+
+# Local outputs (sample output committed in output/ directory)
+.coverage
+htmlcov/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+docs/

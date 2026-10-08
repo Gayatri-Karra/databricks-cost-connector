@@ -1,0 +1,52 @@
+[
+  {
+    "policy_id": "0002D504B2933F76",
+    "name": "Personal Compute",
+    "definition": "{\"aws_attributes.spot_bid_price_percent\":{\"type\":\"fixed\",\"value\":100,\"hidden\":true},\"aws_attributes.availability\":{\"type\":\"fixed\",\"value\":\"ON_DEMAND\",\"hidden\":true},\"node_type_id\":{\"type\":\"allowlist\",\"values\":[\"i3.xlarge\",\"i3.2xlarge\",\"i3.4xlarge\",\"i3en.xlarge\",\"g4dn.xlarge\"],\"defaultValue\":\"i3.xlarge\"},\"spark_version\":{\"type\":\"unlimited\",\"defaultValue\":\"auto:latest-ml\"},\"runtime_engine\":{\"type\":\"fixed\",\"value\":\"STANDARD\",\"hidden\":true},\"num_workers\":{\"type\":\"fixed\",\"value\":0,\"hidden\":true},\"data_security_mode\":{\"type\":\"allowlist\",\"values\":[\"DATA_SECURITY_MODE_AUTO\",\"DATA_SECURITY_MODE_STANDARD\",\"USER_ISOLATION\",\"DATA_SECURITY_MODE_DEDICATED\",\"SINGLE_USER\",\"LEGACY_SINGLE_USER\",\"LEGACY_SINGLE_USER_STANDARD\"],\"defaultValue\":\"DATA_SECURITY_MODE_AUTO\"},\"driver_instance_pool_id\":{\"type\":\"forbidden\",\"hidden\":true},\"cluster_type\":{\"type\":\"fixed\",\"value\":\"all-purpose\"},\"aws_attributes.zone_id\":{\"type\":\"unlimited\",\"defaultValue\":\"auto\",\"hidden\":true},\"instance_pool_id\":{\"type\":\"forbidden\",\"hidden\":true},\"spark_conf.spark.databricks.cluster.profile\":{\"type\":\"fixed\",\"value\":\"singleNode\",\"hidden\":true},\"autotermination_minutes\":{\"type\":\"unlimited\",\"defaultValue\":4320,\"isOptional\":true},\"enable_elastic_disk\":{\"type\":\"fixed\",\"value\":true,\"hidden\":true}}",
+    "description": "Use with small-to-medium data or libraries like pandas and scikit-learn. Spark runs in local mode.",
+    "policy_family_id": "personal-vm",
+    "policy_family_version": 1,
+    "created_at_timestamp": 1791311368000,
+    "is_default": true
+  },
+  {
+    "policy_id": "0008F1834A93FA8B",
+    "name": "Power User Compute",
+    "definition": "\n{\n  \"spark_conf.spark.databricks.cluster.profile\": {\n    \"type\": \"forbidden\",\n    \"hidden\": true\n  },\n  \"spark_version\": {\n    \"type\": \"unlimited\",\n    \"defaultValue\": \"auto:latest-ml\"\n  },\n  \"enable_elastic_disk\": {\n    \"type\": \"fixed\",\n    \"value\": true,\n    \"hidden\": true\n  },\n  \"autotermination_minutes\": {\n    \"type\": \"unlimited\",\n    \"defaultValue\": 120,\n    \"isOptional\": true\n  },\n  \"node_type_id\": {\n    \"type\": \"unlimited\",\n    \"defaultValue\": \"i3.xlarge\",\n    \"isOptional\": true\n  },\n  \"autoscale.min_workers\": {\n    \"type\": \"unlimited\",\n    \"defaultValue\": 2\n  },\n  \"autoscale.max_workers\": {\n    \"type\": \"unlimited\",\n    \"defaultValue\": 10\n  },\n  \"num_workers\": {\n    \"type\": \"forbidden\",\n    \"hidden\": true\n  },\n  \"aws_attributes.availability\": {\n    \"type\": \"fixed\",\n    \"value\": \"SPOT_WITH_FALLBACK\",\n    \"hidden\": true\n  },\n  \"aws_attributes.first_on_demand\": {\n    \"type\": \"range\",\n    \"minValue\": 1,\n    \"defaultValue\": 100001\n  },\n  \"aws_attributes.zone_id\": {\n    \"type\": \"unlimited\",\n    \"defaultValue\": \"auto\",\n    \"hidden\": true\n  },\n  \"aws_attributes.spot_bid_price_percent\": {\n    \"type\": \"fixed\",\n    \"value\": 100,\n    \"hidden\": true\n  },\n  \"instance_pool_id\": {\n    \"type\": \"forbidden\",\n    \"hidden\": true\n  },\n  \"driver_instance_pool_id\": {\n    \"type\": \"forbidden\",\n    \"hidden\": true\n  },\n  \"cluster_type\": {\n    \"type\": \"fixed\",\n    \"value\": \"all-purpose\"\n  }\n}\n",
+    "description": "Run advanced, complex data science projects with dedicated resources.",
+    "policy_family_id": "power-user",
+    "policy_family_version": 1,
+    "created_at_timestamp": 1791311368000,
+    "is_default": true
+  },
+  {
+    "policy_id": "001CF60A61A85DA9",
+    "name": "Shared Compute",
+    "definition": "\n{\n  \"spark_conf.spark.databricks.cluster.profile\": {\n    \"type\": \"forbidden\",\n    \"hidden\": true\n  },\n  \"spark_version\": {\n    \"type\": \"unlimited\",\n    \"defaultValue\": \"auto:latest-lts\"\n  },\n  \"enable_elastic_disk\": {\n    \"type\": \"fixed\",\n    \"value\": true,\n    \"hidden\": true\n  },\n  \"autotermination_minutes\": {\n    \"type\": \"unlimited\",\n    \"defaultValue\": 0,\n    \"isOptional\": true\n  },\n  \"node_type_id\": {\n    \"type\": \"unlimited\",\n    \"defaultValue\": \"i3.2xlarge\",\n    \"isOptional\": true\n  },\n  \"instance_pool_id\": {\n    \"type\": \"forbidden\",\n    \"hidden\": true\n  },\n  \"driver_instance_pool_id\": {\n    \"type\": \"forbidden\",\n    \"hidden\": true\n  },\n  \"autoscale.min_workers\": {\n    \"type\": \"unlimited\",\n    \"defaultValue\": 2\n  },\n  \"autoscale.max_workers\": {\n    \"type\": \"unlimited\",\n    \"defaultValue\": 10\n  },\n  \"num_workers\": {\n    \"type\": \"forbidden\",\n    \"hidden\": true\n  },\n  \"aws_attributes.availability\": {\n    \"type\": \"fixed\",\n    \"value\": \"SPOT_WITH_FALLBACK\",\n    \"hidden\": true\n  },\n  \"aws_attributes.first_on_demand\": {\n    \"type\": \"range\",\n    \"minValue\": 1,\n    \"defaultValue\": 100001\n  },\n  \"aws_attributes.zone_id\": {\n    \"type\": \"unlimited\",\n    \"defaultValue\": \"auto\",\n    \"hidden\": true\n  },\n  \"aws_attributes.spot_bid_price_percent\": {\n    \"type\": \"fixed\",\n    \"value\": 100,\n    \"hidden\": true\n  },\n  \"cluster_type\": {\n    \"type\": \"fixed\",\n    \"value\": \"all-purpose\"\n  },\n  \"data_security_mode\": {\n    \"type\": \"fixed\",\n    \"value\": \"USER_ISOLATION\",\n    \"hidden\": true\n  }\n}\n",
+    "description": "Shared with teams for interactive data exploration, data analysis, and machine learning.",
+    "policy_family_id": "shared-compute",
+    "policy_family_version": 1,
+    "created_at_timestamp": 1791311368000,
+    "is_default": true
+  },
+  {
+    "policy_id": "0003751EFE87DD4E",
+    "name": "Job Compute",
+    "definition": "\n{\n  \"spark_conf.spark.databricks.cluster.profile\": {\n    \"type\": \"forbidden\",\n    \"hidden\": true\n  },\n  \"spark_version\": {\n    \"type\": \"unlimited\",\n    \"defaultValue\": \"auto:latest-lts\"\n  },\n  \"enable_elastic_disk\": {\n    \"type\": \"fixed\",\n    \"value\": true,\n    \"hidden\": true\n  },\n  \"node_type_id\": {\n    \"type\": \"unlimited\",\n    \"defaultValue\": \"i3.xlarge\",\n    \"isOptional\": true\n  },\n  \"num_workers\": {\n    \"type\": \"unlimited\",\n    \"defaultValue\": 4,\n    \"isOptional\": true\n  },\n  \"aws_attributes.availability\": {\n    \"type\": \"fixed\",\n    \"value\": \"SPOT_WITH_FALLBACK\",\n    \"hidden\": true\n  },\n  \"aws_attributes.first_on_demand\": {\n    \"type\": \"range\",\n    \"minValue\": 1,\n    \"defaultValue\": 1\n  },\n  \"aws_attributes.zone_id\": {\n    \"type\": \"unlimited\",\n    \"defaultValue\": \"auto\",\n    \"hidden\": true\n  },\n  \"aws_attributes.spot_bid_price_percent\": {\n    \"type\": \"fixed\",\n    \"value\": 100,\n    \"hidden\": true\n  },\n  \"instance_pool_id\": {\n    \"type\": \"forbidden\",\n    \"hidden\": true\n  },\n  \"driver_instance_pool_id\": {\n    \"type\": \"forbidden\",\n    \"hidden\": true\n  },\n  \"cluster_type\": {\n    \"type\": \"fixed\",\n    \"value\": \"job\"\n  }\n}\n",
+    "description": "General-purpose for running non-interactive workloads.",
+    "policy_family_id": "job-cluster",
+    "policy_family_version": 1,
+    "created_at_timestamp": 1791311368000,
+    "is_default": true
+  },
+  {
+    "policy_id": "0001D0ACC4B8AF65",
+    "name": "Legacy Shared Compute",
+    "definition": "\n{\n  \"spark_conf.spark.databricks.cluster.profile\": {\n    \"type\": \"forbidden\",\n    \"hidden\": true\n  },\n  \"spark_version\": {\n    \"type\": \"unlimited\",\n    \"defaultValue\": \"auto:latest-lts\"\n  },\n  \"enable_elastic_disk\": {\n    \"type\": \"fixed\",\n    \"value\": true,\n    \"hidden\": true\n  },\n  \"autotermination_minutes\": {\n    \"type\": \"unlimited\",\n    \"defaultValue\": 0,\n    \"isOptional\": true\n  },\n  \"node_type_id\": {\n    \"type\": \"unlimited\",\n    \"defaultValue\": \"i3.2xlarge\",\n    \"isOptional\": true\n  },\n  \"instance_pool_id\": {\n    \"type\": \"forbidden\",\n    \"hidden\": true\n  },\n  \"driver_instance_pool_id\": {\n    \"type\": \"forbidden\",\n    \"hidden\": true\n  },\n  \"autoscale.min_workers\": {\n    \"type\": \"unlimited\",\n    \"defaultValue\": 2\n  },\n  \"autoscale.max_workers\": {\n    \"type\": \"unlimited\",\n    \"defaultValue\": 10\n  },\n  \"num_workers\": {\n    \"type\": \"forbidden\",\n    \"hidden\": true\n  },\n  \"aws_attributes.availability\": {\n    \"type\": \"fixed\",\n    \"value\": \"SPOT_WITH_FALLBACK\",\n    \"hidden\": true\n  },\n  \"aws_attributes.first_on_demand\": {\n    \"type\": \"range\",\n    \"minValue\": 1,\n    \"defaultValue\": 100001\n  },\n  \"aws_attributes.zone_id\": {\n    \"type\": \"unlimited\",\n    \"defaultValue\": \"auto\",\n    \"hidden\": true\n  },\n  \"aws_attributes.spot_bid_price_percent\": {\n    \"type\": \"fixed\",\n    \"value\": 100,\n    \"hidden\": true\n  },\n  \"cluster_type\": {\n    \"type\": \"fixed\",\n    \"value\": \"all-purpose\"\n  },\n  \"data_security_mode\": {\n    \"type\": \"unlimited\",\n    \"defaultValue\": \"NONE\",\n    \"hidden\": true\n  }\n}\n",
+    "description": "Shared with teams for interactive data exploration, data analysis, and machine learning. Cannot access Unity Catalog.",
+    "policy_family_id": "shared-data-science",
+    "policy_family_version": 1,
+    "created_at_timestamp": 1791311368000,
+    "is_default": true
+  }
+]

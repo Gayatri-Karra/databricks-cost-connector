@@ -1,0 +1,58 @@
+[
+  {
+    "sku_name": "ENTERPRISE_ALL_PURPOSE_COMPUTE",
+    "cloud": "AWS",
+    "currency": "USD",
+    "unit": "DBU",
+    "pricing": {
+      "default": "0.5500"
+    },
+    "price_start_time": "2026-01-01T00:00:00Z",
+    "price_end_time": null
+  },
+  {
+    "sku_name": "ENTERPRISE_JOBS_COMPUTE",
+    "cloud": "AWS",
+    "currency": "USD",
+    "unit": "DBU",
+    "pricing": {
+      "default": "0.2000"
+    },
+    "price_start_time": "2026-01-01T00:00:00Z",
+    "price_end_time": null
+  },
+  {
+    "sku_name": "ENTERPRISE_SERVERLESS_SQL",
+    "cloud": "AWS",
+    "currency": "USD",
+    "unit": "DBU",
+    "pricing": {
+      "default": "0.7000"
+    },
+    "price_start_time": "2026-01-01T00:00:00Z",
+    "price_end_time": null
+  },
+  {
+    "sku_name": "DATA_TRANSFER_OUT_INTER_REGION",
+    "cloud": "AWS",
+    "currency": "USD",
+    "unit": "GIGABYTES",
+    "pricing": {
+      "default": "0.0200"
+    },
+    "price_start_time": "2026-01-01T00:00:00Z",
+    "price_end_time": null
+  },
+  {
+    "sku_name": "STORAGE_SYSTEM_METASTORE",
+    "cloud": "AWS",
+    "currency": "USD",
+    "unit": "GIGABYTE_HOURS",
+    "pricing": {
+      "default": "0.0001"
+    },
+    "price_start_time": "2026-01-01T00:00:00Z",
+    "price_end_time": null
+  }
+]
+

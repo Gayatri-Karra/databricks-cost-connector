@@ -1,0 +1,28 @@
+[
+  {
+    "emails": [
+      {
+        "type": "work",
+        "value": "ce24btech11031@iith.ac.in",
+        "primary": true
+      }
+    ],
+    "active": true,
+    "groups": [
+      {
+        "display": "admins",
+        "type": "direct",
+        "value": "80998353148836",
+        "$ref": "Groups/80998353148836"
+      },
+      {
+        "display": "account users",
+        "type": "direct",
+        "value": "84764704507960",
+        "$ref": "Groups/84764704507960"
+      }
+    ],
+    "id": "77408127158024",
+    "userName": "ce24btech11031@iith.ac.in"
+  }
+]
